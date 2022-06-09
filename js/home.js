@@ -29,8 +29,8 @@ innerHtml = `${innerHtml}
         <td>${employeePayrollData._salary}</td>
         <td>${stringifyDate(employeePayrollData._startDate)}</td>
         <td>
-        <img name =${employeePayrollData._id} src="../assets/icons/delete-black-18dp.svg" alt="delete" id="1" onclick="remove(this)">
-        <img name =${employeePayrollData._id} src="../assets/icons/create-black-18dp.svg" alt="edit" id="1" onclick="update(this)">
+        <img name =${employeePayrollData._id} src="../assets/icons/delete-black-18dp.svg" alt="delete" onclick="remove(this)">
+        <img name =${employeePayrollData._id} src="../assets/icons/create-black-18dp.svg" alt="edit"  onclick="update(this)">
         </td>
     </tr>`;
 }
@@ -44,5 +44,3 @@ const getDepartmentHtml = (departmentList) => {
     }
     return departmentHtml
 }
- 
-  
